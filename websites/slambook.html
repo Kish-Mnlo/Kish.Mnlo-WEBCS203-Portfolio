@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slambook</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+        body {
+            width: 1000px;
+            margin-right: auto;
+            margin-left: auto;
+            margin-bottom: 50px;
+            background-color: rgb(255, 230, 252);
+        }
+        table, td, th, tr {
+            border: 0px solid black;
+            border-collapse: collapse;
+            padding: 10px;
+            margin: 10px;
+            text-align: left;
+        }
+        table {
+            width: 100%;
+        }
+        label, select {
+            display: block;
+            width: 100%;
+            margin: -1px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        input {
+            display: block;
+            width: 90%;
+            padding: 10px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        header {
+            font-size: 50px;
+            font-family: "Pacifico", cursive;
+            background-color: rgb(5, 5, 28);
+            color: white;
+            border-radius: 20px;
+            padding-left: 20px;
+            padding-bottom: 10px;
+        }
+        h2, h4 {
+            font-family:'Courier New', Courier, monospace;
+        }
+        p {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .div-radio {
+            display: flex;
+            justify-content: left;
+            padding: 10px;
+        }
+        .label-radio {
+            display: inline;
+            padding-left: 10px;
+        }
+        .input-radio {
+            display: inline;
+            width: auto;
+        }
+        #intro {
+            width: 100%;
+            display: flex;
+            padding: 10px;
+            background-color: pink;
+            border-radius: 20px;
+            align-items: center;
+        }
+        #profile {
+            padding-left: 20px;
+            width: 30%;
+        }
+        #profile img {
+            padding: 10px;
+            width: 250px;
+            height: 250px;
+        }
+        #nameform {
+            width: 70%;
+            padding: 10px;
+        }
+        #nameform th{
+            background-color: palevioletred;
+        }
+        #nameform td{
+            background-color: rgb(234, 156, 163);
+        }
+        #mid{
+            background-color: rgb(254, 254, 186);
+            border-radius: 20px;
+            padding: 10px;
+            width: 100%;
+            padding-right: 10px;
+        }
+        #interestform table {
+            width: 980px;
+        }
+        #interestform th {
+            background-color: rgb(251, 186, 47);
+        }
+        #interestform td {
+            background-color: rgb(248, 236, 151);
+        }
+        #totform {
+            padding: 10px;
+            background-color: rgb(158, 158, 228);
+            border-radius: 20px;
+        }
+        #totform th {
+            background-color: rgb(121, 121, 233);
+        }
+        #totform td {
+            background-color: rgb(190, 190, 250);
+        }
+        #totform table {
+            width: 950px;
+        }
+        #socialform {
+            padding: 10px;
+            border-radius: 20px;
+            background-color: rgb(150, 215, 150);
+        }
+        #socialform th{
+            padding: 10px;
+            border-radius: 10px;
+            background-color: rgb(218, 255, 218);
+        }
+        #socialform table {
+            width: 80%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Welcome to my Slambook!
+    </header>
+    <form action="#" method="post">
+        <h2>Why don't you introduce yourself?</h2>
+        <div id="intro">
+            <div id="profile">
+                <img src="https://i.postimg.cc/dDMhRwTQ/pfp.jpg" alt="">
+            </div>
+            <div id="nameform">
+                    <table>
+                        <tr>
+                            <th><label for="firstName">First Name</label></th>
+                            <th><label for="middleName">Middle name</label></th>
+                            <th><label for="lastName">Last Name</label></th>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="fName" id="firstName"></td>
+                            <td><input type="text" name="mName" id="middleName"></td>
+                            <td><input type="text" name="lName" id="lastName"></td>
+                        </tr>
+                        <tr>
+                            <th colspan="3"><label for="nickName">Nickname</label></th>
+                        </tr>
+                        <tr>
+                            <td colspan="3"><input type="text" name="nName" id="nickName"></td>
+                        </tr>
+                        <tr>
+                            <th colspan="3"><label for="pron">Pronouns</label></th>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <select name="pronouns" id="pron">
+                                    <option value="women">She / Her</option>
+                                    <option value="men">He / Him</option>
+                                    <option value="nonbinary">They / Them</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+            </div>
+        </div>
+        <h2>Let's talk more about yourself!</h2>
+        <div id="mid">
+            <div id="interestform">
+                <table>
+                    <tr>
+                        <th><label for="color">What's your favorite color?</label></th>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="favcolor" id="color"></td>
+                    </tr>
+                    <tr>
+                        <th><label for="food">What's your favorite food?</label></th>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="favfood" id="food"></td>
+                    </tr>
+                    <tr>
+                        <th><label for="quote">Any quote you live by?</label></th>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="quotes" id="quote"></td>
+                    </tr>
+                    <tr>
+                        <th><p>From these selections, which do you think best describes you? Pick as many as you like!</p></th>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="likes" id="pain" class="input-radio">
+                            <label for="pain" class="label-radio">Melancholy</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" name="likes" id="sweet" class="input-radio">
+                            <label for="sweet" class="label-radio">Chocolate</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" name="likes" id="spicy" class="input-radio">
+                            <label for="spicy" class="label-radio">Peppermint</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" name="likes" id="cheer" class="input-radio">
+                            <label for="cheer" class="label-radio">Joy</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="likes" id="mood" class="input-radio">
+                            <label for="mood" class="label-radio">Cloudy</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" name="likes" id="athlete" class="input-radio">
+                            <label for="athlete" class="label-radio">Basketball </label>
+                        </td>
+                        <td>
+                            <input type="checkbox" name="likes" id="drawing" class="input-radio">
+                            <label for="drawing" class="label-radio">Paint</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" name="likes" id="studious" class="input-radio">
+                            <label for="studious" class="label-radio">Books</label>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <h2>Let's play this or that!</h2>
+        <div id="thisorthat">
+            <div id="totform">
+                <table>
+                    <tr>
+                        <th><p>Do you prefer Summer or Winter?</p></th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="div-radio">
+                                <input type="radio" name="weather" id="weatherS" class="input-radio">
+                                <label for="weatherS" class="label-radio">Summer</label>
+                            </div>
+                            <div class="div-radio">
+                                <input type="radio" name="weather" id="weatherW" class="input-radio">
+                                <label for="weatherW" class="label-radio">Winter</label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><p>Do you prefer Sweet or Spicy?</p></th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="div-radio">
+                                <input type="radio" name="taste" id="tasteSw" class="input-radio">
+                                <label for="tasteSw" class="label-radio">Sweet</label>
+                            </div>
+                            <div class="div-radio">
+                                <input type="radio" name="taste" id="tasteSp" class="input-radio">
+                                <label for="tasteSp" class="label-radio">Spicy</label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><p>Do you prefer Day or Night?</p></th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="div-radio">
+                                <input type="radio" name="time" id="timeD" class="input-radio">
+                                <label for="timeD" class="label-radio">Day</label>
+                            </div>
+                            <div class="div-radio">
+                                <input type="radio" name="time" id="timeN" class="input-radio">
+                                <label for="timeN" class="label-radio">Night</label>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <h2>Want to share your socials? Go ahead!</h2>
+        <div id="socials">
+            <div id="socialform">
+                <table>
+                    <tr>
+                        <th><label for="fb">Facebook:</label></th>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="socials" id="fb"></td>
+                    </tr>
+                    <tr>
+                        <th><label for="X">X (Formerly known as twitter):</label></th>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="socials" id="X"></td>
+                    </tr>
+                    <tr>
+                        <th><label for="insta">Instagram:</label></th>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="socials" id="insta"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <h4>Thank you for participating! Click the submit button to submit or the reset button to reset everything.</h4>
+        <div style="display:flex">
+            <input type="submit" value="Submit" style="width: auto; padding: 10px; margin: 10px;">
+            <input type="reset" value="Reset" style="width: auto; padding: 10px; margin: 10px;">
+        </div>
+    </form>
+</body>
+</html>

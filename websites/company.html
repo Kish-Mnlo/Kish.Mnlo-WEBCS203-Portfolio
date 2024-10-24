@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Cosmicore</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=New+Amsterdam&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+        #main {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+        #top {
+            display: flex;
+            flex-direction: row;
+            background-color: #8165A8;
+            padding: 20px;
+        }
+        #top1 {
+            width: 60%;
+            height: 300px;
+            margin: 10px;
+            padding: 10px;
+            background-color: white;
+            border-radius: 20px;
+        }
+
+        #top1 h2 {
+            font-family: "New Amsterdam", sans-serif;
+            font-size: 35px;
+            padding-left: 20px;
+            color: #8165A8;
+        }
+
+        #top1 p{
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            font-size: 20px;
+            padding-left: 40px;
+            padding-right: 30px;
+            color: #8165A8;
+        }
+        
+        
+        #top2 {
+            display: flex;
+            flex-direction: column;
+            width: 40%;
+            height: 300px;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 20px;
+            background-color: white;
+        }
+
+        #top2 h2 {
+            font-family: "New Amsterdam", sans-serif;
+            font-size: 25px;
+            padding-left: 20px;
+            color: #8165A8;
+        }
+
+        #p1{
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            font-size: 14px;
+            margin-top: -95px;
+            padding-left: 130px;
+            padding-right: 30px;
+            color: #8165A8;
+        }
+
+        #p2{
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            font-size: 14px;
+            margin-top: -75px;
+            padding-left: 130px;
+            padding-right: 30px;
+            color: #8165A8;
+        }
+
+        #img1{
+            height: 100px;
+            width: 110px;
+            padding: 0px;
+            margin-top: -10px;
+            margin-left: 20px;
+            position: inherit;
+        }
+
+        #img2{
+            height: 100px;
+            width: 110px;
+            padding: 0px;
+            margin-top: -30px;
+            margin-left: 15px;
+            position: inherit;
+        }
+
+        .inside1 {
+            height: 150px;
+            padding: 5px;
+            background-color: white;
+        }
+
+        .inside2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 384px;
+            height: 250px;
+            padding: 15px;
+            background-color: #8165A8;
+        }
+
+        .inside2 img {
+            border-radius: 20px;
+            object-fit: cover;
+            height: 200px;
+            width: 250px;
+            padding-bottom: 10px;
+        }
+
+        .inside2 h3 {
+            font-family: "Bebas Neue", sans-serif;
+            color: white;
+            font-size: 25px;
+            margin: 0px;
+        }
+
+        .inside2 p {
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            color: white;
+            margin: 0px;
+        }
+
+        #middle {
+            height: 300px;
+            padding: 10px;
+            background-color: white;
+        }
+
+        #middle h2 {
+            font-family: "New Amsterdam", sans-serif;
+            font-size: 40px;
+            padding-left: 80px;
+            margin-top: 50px;
+            color: #5241b2;
+        }
+
+        #middle p {
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            font-size: 16px;
+            padding-left: 130px;
+            padding-right: 200px;
+            margin-top: -20px;
+            color: #5241b2;
+        }
+
+        #head {
+            background-color: #8165A8;
+            height: 80px;
+            font-family: "Bebas Neue", sans-serif;
+            font-size: 20px;
+            padding-left: 50px;
+            margin-bottom: -10px;
+            color: whitesmoke;
+        }
+        #bottom {
+            display: flex;
+            flex-direction: row;
+            height: 300px;
+            padding: 10px;
+            background-color:#8165A8;
+            align-items: center;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-left: 30px;
+            padding-right: 20px;
+            background-color: #2A1B3D;
+            color: white;
+            font-family: "Bebas Neue", sans-serif;
+            font-size: 20px;
+        }
+
+        #navigation a {
+            text-decoration: none;
+            color: white;
+            margin: 10px;
+            font-family: "Bebas Neue", sans-serif;
+        }
+        
+        #navigation a:hover {
+            color: #2A1B3D;
+            background-color: white;
+            padding: 10px;
+        }
+
+        footer {
+            background-color: #2A1B3D;
+            padding: 10px;
+            font-family:'Courier New', Courier, monospace;
+            font-weight: 700;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CosmiCore</h1>
+        <div id="navigation">
+            <a href="WEBCS_CS203_Manalo.html">Home</a>
+            <a href="#">Products</a>
+            <a href="#">Support</a>
+            <a href="#">Contact us</a>
+        </div>
+    </header>
+    <div id="main">
+        <div id="top">
+            <div id="top1">
+                <h2>About Cosmicore..</h2>
+                <p>Cosmicore first started as a project that was created with the intention to create one of the best software and hardware to be used in the near future.</p>
+                <p>It first started out with a team of 5 filled with hopes and dreams and eventually blossomed into what we call Cosmicore today!</p>
+            </div>
+            <div id="top2">
+                <div class="inside1">
+                    <h2>Our mission: Reaching for the stars</h2>
+                    <img src="https://i.postimg.cc/Wb3Jdfnj/Untitled349-20240816001405.png" alt="" id="img1">
+                    <p id="p1">We, as innovators, believe in knowing no limits and always reaching for the stars. Cosmicore is a company that is willing to learn new things, create things never seen before, and encourages creativity. </p>
+                </div>
+                <div class="inside1">
+                    <h2>Our vision: Improvement means success</h2>
+                    <img src="https://i.postimg.cc/N0bNkzWD/Untitled349-20240815235238.png" alt="" id="img2">
+                    <p id="p2">We strive to keep improving our projects to deliver the best quality every person deserves.</p>
+                </div>
+            </div>
+        </div>
+        <div id="middle">
+            <h2>How do we operate?</h2>
+            <p>As a company that first started off with a small team, we value teamwork, dedication and commitment when it comes to starting a project. We incorporate these values into our work environment and help those who struggle to. 
+                We also want to foster a kind, approachable and open-minded team as we value having creativity when creating different projects. </p> <br>
+            <p>
+                We also actively engage with our co workers to create a friendly environment and encourage everyone to not be afraid to share their thoughts during a discussion.
+                Overall, we want to create a safe and comfortable area for our workers to work easily and effectively.
+            </p>
+        </div>
+        <div id="head">
+            <h1>Our Facilities</h1>
+        </div>
+        <div id="bottom">
+            <div class="inside2">
+                <img src="https://i.postimg.cc/0yB8tPhX/computer.jpg" alt="">
+                <h3>The Computer Stations</h3>
+                <p>Where the magic happens..</p>
+            </div>
+            <div class="inside2">
+                <img src="https://i.postimg.cc/J0MmynB0/lounge.jpg" alt="">
+                <h3>The Lounge</h3>
+                <p>A place to relax and interact!</p>
+            </div>
+            <div class="inside2">
+                <img src="https://i.postimg.cc/qvzr6Wgs/cafeteria.jpg" alt="">
+                <h3>The Cafeteria</h3>
+                <p>Filled with delicious food.</p>
+            </div>
+            <div class="inside2">
+                <img src="https://i.postimg.cc/C1HpVg6g/discussion.jpg" alt="">
+                <h3>The Discussion rooms</h3>
+                <p>Comfortable area for meetings.</p>
+            </div>
+            <div class="inside2">
+                <img src="https://i.postimg.cc/3r1QS3vj/server.jpg" alt="">
+                <h3>The Server Room</h3>
+                <p>Where all the secrets are stored.</p>
+            </div>
+        </div>
+    </div> 
+    <footer>
+        Copyright &copy; 2024. Kisha Margarette B. Manalo
+    </footer>
+</body>
+</html>
