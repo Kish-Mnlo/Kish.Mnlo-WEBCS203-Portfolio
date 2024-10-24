@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <script src="https://kit.fontawesome.com/41277385c6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Kisha</a>
+        <nav>
+            <div class="desktopmenu">
+                <a href="index.html" class="active">Home</a>
+                <a href="services.html">Services</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="off-screen-menu">
+                <a href="index.html" class="active">Home</a>
+                <a href="services.html">Services</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="ham-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <section class="contacts">
+        <h1>Interested in working with me?</h1>
+        <p>You can contact me at..</p>
+        <div class="socials">
+            <a href="#"><i class="fa fa-envelope"></i></a><h3>kish.mnlo@gmail.com</h3>
+        </div>
+        <div class="socials">
+            <a href="#"><i class="fa fa-facebook"></i></a><h3>https://www.facebook.com/kishamargarette.manalo/</h3>
+        </div>
+        <div class="socials">
+            <a href="#"><i class="fa fa-github"></i></a><h3>https://github.com/Kish-Mnlo</h3>
+        </div>
+        <div class="socials">
+            <a href="#"><i class="fa fa-twitter"></i></a><h3>kish.mnlo@gmail.com</h3>
+        </div>
+        <div class="socials">
+            <a href="#"><i class="fa fa-instagram"></i></a><h3>https://www.instagram.com/kish.mnl/</h3>
+        </div>
+    </section>
+
+    <section class="forms">
+        <h1>Feedback Form</h1>
+        <form action="post">
+            <div class="column1">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name">
+                <label for="service">Service Acquired:</label>
+                <select name="service" id="service">
+                    <option value="frontend">Front-end Website Development</option>
+                    <option value="backend">Back-end Website Development</option>
+                    <option value="design">Website Design</option>
+                    <option value="program">Program Development</option>
+                </select>
+                <p>Would you try again?</p>
+                <div class="radio">
+                    <input type="radio" name="try_again" id="yes" value="yes">
+                    <label for="yes">Yes</label>
+                </div>
+                <div class="radio">
+                    <input type="radio" name="try_again" id="no" value="no">
+                    <label for="no">No</label>
+                </div>
+            </div>
+            <div class="column2">
+                <label for="comments">Comments/Suggestions:</label>
+                <textarea name="comments" id="comments" rows="20" cols="50"></textarea>
+                <div class="buttons">
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <div class="social-icons">
+            <a href="#"><i class="fa fa-envelope"></i></a>
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-github"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+        </div>
+        <h3><i class="fa fa-copyright"></i> Copyright by Kisha Manalo</h3>
+    </footer>
+
+    <script>
+        const hamMenu = document.querySelector('.ham-menu');
+
+        const offScreenMenu = document.querySelector('.off-screen-menu');
+
+        hamMenu.addEventListener('click', () => {
+            hamMenu.classList.toggle('active');
+            offScreenMenu.classList.toggle('active');
+        });
+
+    </script>
+</body>
+</html>
