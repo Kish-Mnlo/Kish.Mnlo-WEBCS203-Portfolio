@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <script src="https://kit.fontawesome.com/41277385c6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Kisha</a>
+        <nav>
+            <div class="desktopmenu">
+                <a href="index.html" class="active">Home</a>
+                <a href="services.html">Services</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="off-screen-menu">
+                <a href="index.html" class="active">Home</a>
+                <a href="services.html">Services</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="ham-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <section class="services">
+        <table>
+            <tr>
+                <th>Service</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td><b>Front-end Website Development</b></td>
+                <td>This service is for coding the front-end or the design of a website. The price and time taken to do this service varies on the design required. Please contact me for more information!</td>
+            </tr>
+            <tr>
+                <td><b>Back-end Website Development</b></td>
+                <td>This service is for coding the back-end or the underlying functions of a website. You would have to specify which functions are needed for coding, the time taken varies from a day to a week and the starting price is around 500 Php. Please contact me for more information!</td>
+            </tr>
+            <tr>
+                <td><b>Website Design</b></td>
+                <td>This service is to create a design for your very own website! Price may vary depending on how much pages are going to be created, although starting price is around 1000 Php. This service does not involve any programming or coding as it is a graphic design service.</td>
+            </tr>
+            <tr>
+                <td><b>Program Development</b></td>
+                <td>This service is for creating simple projects that require coding. I'm open to working with teams and the pricing for this service is by the hour. Please contact me for further details.</td>
+            </tr>
+        </table>
+    </section>
+
+    <footer>
+        <div class="social-icons">
+            <a href="mailto: kish.mnlo@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
+            <a href="https://www.facebook.com/kishamargarette.manalo/" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a href="https://github.com/Kish-Mnlo" target="_blank"><i class="fa fa-github"></i></a>
+            <a href="https://x.com/short_kiwi" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.instagram.com/kish.mnl/" target="_blank"><i class="fa fa-instagram"></i></a>
+        </div>
+        <h3><i class="fa fa-copyright"></i> Copyright by Kisha Manalo</h3>
+    </footer>
+
+    <script>
+        const hamMenu = document.querySelector('.ham-menu');
+
+        const offScreenMenu = document.querySelector('.off-screen-menu');
+
+        hamMenu.addEventListener('click', () => {
+            hamMenu.classList.toggle('active');
+            offScreenMenu.classList.toggle('active');
+        });
+
+    </script>
+</body>
+</html>
